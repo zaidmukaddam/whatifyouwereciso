@@ -2,6 +2,7 @@ import { Footer } from "@/components/footer";
 import * as FadeIn from "@/components/motion/staggers/fade";
 import { Posts } from "@/components/posts";
 import { ToolsList } from "@/components/tools/tools-list";
+import Link  from "@/components/link";
 
 const Spacer = () => <div className="mt-6" />;
 
@@ -23,7 +24,7 @@ export default function Home() {
           <span className="font-medium">What if you were a CISO?</span>{" "}
           isn't just a guide; it includes curated details about real incidents and tools to help you learn.
           This collection of guides, examples, and resources is designed to kickstart your journey as a Chief Information Security Officer. 
-          The idea for this guide arose after a recent incident where a CISO sold company data to a hacker. 
+          The idea for this guide arose after a recent incident where a <Link href={"/incidents/fallout-star-heatlh-data-breach"} underline>CISO allegedly old company data to a hacker.</Link>{" "}
           It will help you understand the role of a CISO and the ethical responsibilities that come with it.
         </p>
       </FadeIn.Item>
